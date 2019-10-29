@@ -1,0 +1,35 @@
+/* 这里没有使用left 0 ,是因为它的起始位置就是脱离文档流之前的位置，也就是现在body的起始位置
+    。这样在超宽的屏幕下也能保证标题在body的左上角，而不是屏幕的左上角 */
+.ido-header {
+  display: flex;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 640px;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  text-align: center;
+  top: 0;
+  z-index: 200;
+  border-bottom: 1px solid #ddd;
+  background: #f8f8f8;
+}
+
+.ido-header > .left {
+    flex-basis: 3rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* 中间标题部分 */
+.ido-header > .title{
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* 右侧功能区 */
+.ido-header > .right{
+    flex-basis: 3rem;
+    flex-shrink: 0;
+}

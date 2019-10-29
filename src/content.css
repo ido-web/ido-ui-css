@@ -1,0 +1,18 @@
+/* 内容区 
+    设置position: relative;属性是为了方便子元素在相对它做绝对定位
+
+    通过兄弟选择器，来设置，当没有header或者nav的时候，content可以区填充对应的位置
+*/
+.ido-content{
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+.ido-header~.ido-content {
+    padding-top: 2.5rem;
+}
+
+.ido-navbar~.ido-content {
+    padding-bottom: 2.5rem;
+}

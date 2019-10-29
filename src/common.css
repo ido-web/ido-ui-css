@@ -1,0 +1,48 @@
+/*
+ * @Author: ido 
+ * @Date: 2019-10-12 09:24:42
+ * @Last Modified by: ido
+ */
+
+
+/* 屏幕宽度在340px至410px时的样式 */
+html {
+    font-size: 20px;
+}
+
+/* 屏幕宽度小于340px时的样式 */
+@media (max-width: 340px){ 
+    html {
+        font-size: 18px;
+    }
+ }
+
+/* 屏幕宽度大于410px时的样式 */
+@media (min-width: 410px){ 
+    html {
+        font-size: 22px;
+    }
+ }
+
+ 
+/* body默认样式 */
+body{
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+    /* 横轴方向出现了超宽的元素，设置为隐藏 ，这样就能放置在x轴方向出现滚动条 */
+    overflow-x: hidden;
+    /* 在ios系统上， 可以i让滚动元素带有弹性，滚动的更顺滑 */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 页面蒙版 */
+.ido-mask{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 300;
+}
