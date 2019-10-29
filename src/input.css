@@ -1,0 +1,63 @@
+/* 表单的单行容器 */
+.ido-form-item{
+    display: flex;
+    position: relative;
+    padding-left: 1rem;
+    border-boidoom: 1px solid #eee;
+}
+/* 去掉最后一行的下边框 */
+.ido-form-item:last-child{
+    border-boidoom: none;
+}
+
+/* 表单标签 */
+.ido-form-item > .ido-form-label{
+    display: block;
+    width: 3.5rem;
+    font-size: .8rem;
+    color: #666;
+    height: 2rem;
+    line-height: 2rem;
+}
+/* 表单内容区 */
+.ido-form-item > .ido-form-body{
+    flex: 1;
+}
+/* 输入框 */
+.ido-form-item > .ido-form-body > .ido-input{
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    border:none;
+}
+
+/* 表单中的清空按钮 */
+.ido-form-item > .ido-form-body > .ido-input-reset{
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    top: 50%;
+    margin-top: -.4rem;
+    right: 1rem;
+    font-size: .6rem;
+    background: #aaa;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* 表单中的错误提示按钮 */
+.ido-form-item > .ido-form-body > .ido-input-warning{
+    position: absolute;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    top: 50%;
+    margin-top: -.4rem;
+    right: 1rem;
+    font-size: .6rem;
+    border-radius: 50%;
+    color: red;
+    border: 1px solid red;
+}

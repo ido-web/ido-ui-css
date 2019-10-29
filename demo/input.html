@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="../src/ido-ui.css" />
+    <title>表单元素</title>
+  </head>
+  <body>
+    <div class="ido-content">
+      <h1 class="ido-panel-title">Panel标题</h1>
+      <div class="ido-panel-body">
+        Panel内容区
+      </div>
+
+      <!-- 基本输入框 -->
+
+      <h1 class="ido-panel-title">输入框:</h1>
+      <div class="ido-panel-body no-padding">
+        <div class="ido-form-item">
+          <label class="ido-form-label">用户名</label>
+          <div class="ido-form-body">
+            <input class="ido-input" type="text" placeholder="请输入姓名" />
+          </div>
+        </div>
+        <div class="ido-form-item">
+          <label class="ido-form-label">密码</label>
+          <div class="ido-form-body">
+            <input class="ido-input" type="password" placeholder="请输入密码" />
+          </div>
+        </div>
+        <div class="ido-form-item">
+          <label class="ido-form-label">日期</label>
+          <div class="ido-form-body">
+            <input class="ido-input" type="date" placeholder="请选择日期" />
+          </div>
+        </div>
+      </div>
+
+      <h1 class="ido-panel-title">输入框:</h1>
+      <div class="ido-panel-body no-padding">
+        <div class="ido-form-item">
+          <!-- <label class="ido-form-label">用户名</label> -->
+          <div class="ido-form-body">
+            <input class="ido-input" type="text" placeholder="请输入姓名" />
+          </div>
+        </div>
+        <div class="ido-form-item">
+          <!-- <label class="ido-form-label">密码</label> -->
+          <div class="ido-form-body">
+            <input class="ido-input" type="password" placeholder="请输入密码" />
+          </div>
+        </div>
+        <div class="ido-form-item">
+          <!-- <label class="ido-form-label">日期</label> -->
+          <div class="ido-form-body">
+            <input class="ido-input" type="date" placeholder="请选择日期" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 带清空按钮的输入框 -->
+      <h1 class="ido-panel-title">带清空功能的输入框:</h1>
+      <div class="ido-panel-body no-padding">
+        <div class="ido-form-item">
+          <label class="ido-form-label">手机号</label>
+          <div class="ido-form-body">
+            <input class="ido-input" type="text" placeholder="请输入手机号" />
+            <i class="fa fa-close ido-input-reset"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 带清空按钮的输入框 -->
+      <h1 class="ido-panel-title">带错误提示的输入框:</h1>
+      <div class="ido-panel-body no-padding">
+        <div class="ido-form-item">
+          <label class="ido-form-label">邮箱</label>
+          <div class="ido-form-body">
+            <input class="ido-input" type="text" placeholder="请输入邮箱" />
+            <i class="fa fa-exclamation ido-input-warning"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
