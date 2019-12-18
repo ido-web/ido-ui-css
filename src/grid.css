@@ -1,0 +1,77 @@
+/* 网格组件 */
+.ido-grid{
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+}
+/* 网格中的格子 */
+.ido-grid > .ido-grid-item{
+  position: relative;
+  flex: 1 1 33%;
+  box-sizing: border-box;
+  padding: 1.2rem 0;
+  text-align: center;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+/* 默认是3列 */
+.ido-grid .ido-grid-item:nth-child(3n){
+  border-right: none;
+}
+
+/* grid内容区 */
+.ido-grid > .ido-grid-item > .ido-grid-icon{
+  font-size: 1.5rem;
+  color: #aaa;
+  margin-bottom: .5rem;
+}
+.ido-grid > .ido-grid-item > .ido-grid-label{
+  font-size: .6rem;
+  color: #333;
+} 
+
+
+/* 不需要边框时取消容器上的border */
+.ido-grid.no-border{
+  border: none;
+}
+/* 不需要边框时取消格子上所以的border */
+.ido-grid.no-border > .ido-grid-item{
+  border: none;
+}
+
+
+/* 两列网格 */
+.ido-grid.ido-grid-2 .ido-grid-item{
+  border-right: 1px solid #ddd;
+  flex-basis: 50%;
+  padding: 1.8rem 0;
+}
+.ido-grid.ido-grid-2 .ido-grid-item:nth-child(2n){
+  border-right: none;
+}
+
+/* 四列网格 */
+.ido-grid.ido-grid-4 .ido-grid-item{
+  border-right: 1px solid #ddd;
+  flex-basis: 25%;
+  padding: .9rem 0;
+}
+.ido-grid.ido-grid-4 .ido-grid-item:nth-child(4n){
+  border-right: none;
+}
+/* 五列网格 */
+.ido-grid.ido-grid-5 .ido-grid-item{
+  border-right: 1px solid #ddd;
+  flex-basis: 20%;
+  padding: .6rem 0;
+}
+.ido-grid.ido-grid-5 .ido-grid-item:nth-child(5n){
+  border-right: none;
+}
+
+/* 不需要边框时取消格子上所以的border */
+.ido-grid.no-border > .ido-grid-item{
+  border: none !important;
+}

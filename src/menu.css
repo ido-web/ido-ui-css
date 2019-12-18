@@ -1,0 +1,33 @@
+/* 菜单项 */
+.ido-menu > .ido-menu-item{
+  display: flex;
+  height: 2.3rem;
+  padding: 0 1rem;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  font-size: .8rem;
+}
+
+/* 菜单名称 */
+.ido-menu > .ido-menu-item > .ido-menu-name{
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #333;
+}
+/* 菜单信息 */
+.ido-menu > .ido-menu-item > .ido-menu-value{
+  max-width: 5rem;
+  height: 1rem;
+  line-height: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
+/* 下级操作引导图标 */
+.ido-menu > .ido-menu-item > .ido-menu-icon{
+  margin-left: .3rem;
+  color: #999;
+}

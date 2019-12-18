@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../src/ido-ui.css" />
+    <title>IDOUI-ActionSheet弹出式菜单</title>
+  </head>
+  <body>
+    <div class="ido-content">
+      <h1 class="ido-panel-title">ActionSheet弹出式菜单</h1>
+      <div class="ido-panel-body">
+        <a class="ido-btn" id="js-show">显示弹出式菜单</a>
+      </div>
+    </div>
+    <div class="ido-action-sheet">
+      <div class="ido-mask"></div>
+      <div class="ido-action-sheet-wrap">
+        <div class="ido-action-sheet-header">
+          <h1 class="ido-action-sheet-title">请选择</h1>
+        </div>
+        <div class="ido-action-sheet-body">
+          <a class="ido-action-sheet-menu">收藏</a>
+          <a class="ido-action-sheet-menu">关注</a>
+          <a class="ido-action-sheet-menu">分享给好友</a>
+        </div>
+        <div class="ido-action-sheet-footer">
+          <a class="ido-action-sheet-menu" id="js-close">取消</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = () => {
+        // 弹出菜单
+        document.querySelector("#js-show").onclick = e => {
+          document.querySelector(".ido-action-sheet").classList.add("show");
+        };
+        // 收回菜单
+        document.querySelector("#js-close").onclick = e => {
+          document.querySelector(".ido-action-sheet").classList.remove("show");
+        };
+      };
+    </script>
+  </body>
+</html>

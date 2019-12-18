@@ -61,3 +61,56 @@
     color: red;
     border: 1px solid red;
 }
+
+
+/* 自定义单选 */
+.ido-form-item > .ido-radio{
+    flex: 1;
+    font-size: .8rem;
+    line-height: 2rem;
+}
+/* 未选中状态的图标 */
+.ido-form-item > .ido-radio > .ido-radio-icon{
+    margin-right: .5rem;
+    color: #e0652f;
+    visibility: hidden;
+}
+/* 选中状态的图标 */
+.ido-form-item > .ido-radio.checked > .ido-radio-icon{
+    visibility: visible;
+}
+/* 隐藏的radio类型的input */
+.ido-form-item > .ido-radio > .ido-radio-input{
+    position: absolute;
+    left: -999rem;
+}
+
+
+/* 自定义多选 */
+.ido-form-item > .ido-check{
+    flex: 1;
+    font-size: .8rem;
+    line-height: 2rem;
+}
+/* 未选中时的图标 */
+.ido-form-item > .ido-check > .ido-check-icon{
+    margin-right: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: rgba(0,0,0,0);
+    font-size: .6rem;
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+}
+/* 选中时的图标 */
+.ido-form-item > .ido-check.checked > .ido-check-icon{
+    background: #09BB07;
+    color: #fff;
+    border-color: rgba(0,0,0,0)
+}
+/* 隐藏的check类型的input */
+.ido-form-item > .ido-check > .ido-check-input{
+    position: absolute;
+    left: -999rem;
+}

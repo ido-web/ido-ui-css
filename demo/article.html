@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="../src/ido-ui.css">
+        <title>IDOUI-Article文本</title>
+    </head>
+    <body>
+        <div class="ido-content">
+            <div class="ido-article fold">
+                <h1 class="ido-article-title">关于IDO-UI</h1>
+                <p class="ido-article-info">作者：ido</p>
+                <div class="ido-article-content">
+                    <h2 class="ido-article-subtitle">UI是什么？</h2>
+                    <p class="ido-article-paragraph">UI最主要的功能就是建立用户和系统后台之间的联系，系统后台把数据转换成可视化的内容给用户，同时用户把数据传给系统后台。</p>
+                    <p class="ido-article-paragraph">是先有鸟还是先有蛋，你不知道，我不知道，只有鸟知道;是鸟先消失还是蛋先消失，你知道，我知道，只有鸟不知道。。</p>
+                    <p class="ido-article-paragraph">用户体验里最重要的应该是这个产品好不好用，也就是“交互”这部分，使用是否方便。</p>
+                    <img class="ido-article-img" src="../imgs/gg.jpg" alt="测试图片">
+                </div>
+                <div class="ido-article-unfold-btn" id="js-unfold">
+                    <i class="fa fa-angle-double-down fa-vibrate-y"></i>
+                </div>
+            </div>
+            <div class="ido-panel">
+                <div class="ido-panel-title">其他内容</div>
+                <div class="ido-panel-body">
+                    其他内容...
+                </div>
+            </div>
+        </div>
+
+        <script>
+            window.onload = ()=>{
+                // 展开文章
+                document.querySelector('#js-unfold').onclick = (e) => {
+                    document.querySelector('.ido-article').classList.remove('fold');
+                }
+            };
+        </script>
+    </body>
+</html>

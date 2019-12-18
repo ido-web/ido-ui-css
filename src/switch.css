@@ -1,0 +1,39 @@
+/* 切换开关 */
+.ido-switch{
+  position: relative;
+  box-sizing: content-box;
+  width: 2.6rem;
+  height: 1.4rem;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: .75rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color .3s, border .3s;
+  /* 去掉webkit内核里默认的样式 */
+  -webkit-appearance: none;
+  /* 去掉webkit内核里默认的点击效果 */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* 选中状态下，改变开关边框和背景色 */
+.ido-switch:checked{
+  border-color: #e0652f;
+  background-color: #e0652f;
+}
+
+/* 使用::after伪元素实现圆形按钮的样式 */
+.ido-switch::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: .7rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2px #999;
+  transition: left .3s;
+}
+/* 选中状态下，更改圆形按钮的位置 */
+.ido-switch:checked::after{
+  left: 1.2rem;
+}
