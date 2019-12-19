@@ -105,7 +105,7 @@
 }
 /* 选中时的图标 */
 .ido-form-item > .ido-check.checked > .ido-check-icon{
-    background: #09BB07;
+    background: #e0652f;
     color: #fff;
     border-color: rgba(0,0,0,0)
 }

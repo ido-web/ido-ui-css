@@ -57,6 +57,7 @@
 }
 /* 文章图片 */
 .ido-article .ido-article-img{
+  display: block;
   max-width: 100%;
   margin: auto;
 }

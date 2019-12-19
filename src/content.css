@@ -30,6 +30,12 @@
     font-size: 14px;
     font-weight: normal;
 }
+/* 标题导航 */
+.ido-content .ido-panel-title > .ido-panel-link{
+    float: right;
+    margin-right: 1rem;
+    color: #aaa;
+}
 /* Panel 内容区 */
 .ido-content .ido-panel-body{
     position: relative;

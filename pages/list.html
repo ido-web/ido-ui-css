@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="../dist/ido-ui.min.css" />
+    <link rel="stylesheet" href="./list.css" />
+    <title>IDOUI-发现</title>
+  </head>
+  <body class="page-list">
+    <!-- 底部导航 -->
+    <div class="ido-navbar">
+      <a class="navbar-item" href="./index.html">
+        <i class="fa fa-home icon"></i>
+        <span class="name">首页</span>
+      </a>
+      <a class="navbar-item active">
+        <i class="fa fa-search icon"></i>
+        <span class="name">发现</span>
+      </a>
+      <a class="navbar-item" href="./profile.html">
+        <i class="fa fa-user-o icon"></i>
+        <span class="name">我的</span>
+      </a>
+    </div>
+    <!-- 内容区 -->
+    <div class="ido-content">
+      <!-- 带suggest的搜索框 -->
+      <div class="ido-search">
+        <!-- 搜索框 -->
+        <form class="ido-search-form" action="#">
+          <div class="ido-search-input-wrap">
+            <i class="fa fa-search ido-search-icon"></i>
+            <input
+              type="text"
+              class="ido-search-input"
+              placeholder="搜索"
+              autocomplete="off"
+              required
+            />
+            <i class="fa fa-close ido-search-clear"></i>
+          </div>
+          <span class="ido-search-cancel">取消</span>
+        </form>
+        <!-- 搜索建议 -->
+        <ul class="ido-search-suggest">
+          <li class="ido-suggest-item">手机</li>
+          <li class="ido-suggest-item">iPhone XS Max</li>
+          <li class="ido-suggest-item">华为P30</li>
+          <li class="ido-suggest-item">小米 MIX3</li>
+          <li class="ido-suggest-item">诺基亚1110</li>
+        </ul>
+      </div>
+
+      <!-- 排序功能区 -->
+      <div class="sort-wrap">
+        <a class="ido-btn sort-btn active">
+          收藏次数
+          <!-- 没有排序时使用的图标 -->
+          <!-- <i class="fa fa-sort"></i> -->
+          <!-- 升序排列时使用的图标 -->
+          <!-- <i class="fa fa-sort-asc"></i> -->
+          <!-- 降序排列时使用的图标 -->
+          <i class="fa fa-sort-desc"></i>
+        </a>
+        <a class="ido-btn sort-btn">
+          发布时间
+          <i class="fa fa-sort"></i>
+        </a>
+      </div>
+
+      <!-- 列表内容 -->
+      <div class="ido-panel-body no-padding">
+        <div class="ido-loading-inline">
+          <span class="ido-loading-info">
+            <i class="fa fa-circle-o-notch fa-spin ido-loading-icon"></i>
+            用力加载中
+          </span>
+        </div>
+        <!-- 文章列表 -->
+        <div class="ido-list">
+            <a href="./article.html" class="ido-list-item">
+              <div class="item-img-wrap">
+                <img class="item-img" src="http://pic4.40017.cn/poi/2016/07/07/10/DtmExH_242x150_00.jpg.webp" alt="旅游哦" />
+              </div>
+              <div class="item-content-wrap">
+                <h1 class="item-title">
+                  住安顺百灵希尔顿逸林酒店1晚，游黄果树瀑布，看瀑布秀美风光
+                </h1>
+                <p class="item-desc">发布时间：2019-3-29</p>
+                <p class="item-desc">阅读2334次 | 收藏233次</p>
+              </div>
+            </a>
+            <a href="./article.html" class="ido-list-item">
+              <div class="item-img-wrap">
+                <img class="item-img" src="http://pic4.40017.cn/poi/2016/07/07/10/DtmExH_242x150_00.jpg.webp" alt="旅游哦" />
+              </div>
+              <div class="item-content-wrap">
+                <h1 class="item-title">
+                  住安顺百灵希尔顿逸林酒店1晚，游黄果树瀑布，看瀑布秀美风光
+                </h1>
+                <p class="item-desc">发布时间：2019-3-29</p>
+                <p class="item-desc">阅读2334次 | 收藏233次</p>
+              </div>
+            </a>
+            <a href="./article.html" class="ido-list-item">
+              <div class="item-img-wrap">
+                <img class="item-img" src="http://pic4.40017.cn/poi/2016/07/07/10/DtmExH_242x150_00.jpg.webp" alt="旅游哦" />
+              </div>
+              <div class="item-content-wrap">
+                <h1 class="item-title">
+                  住安顺百灵希尔顿逸林酒店1晚，游黄果树瀑布，看瀑布秀美风光
+                </h1>
+                <p class="item-desc">发布时间：2019-3-29</p>
+                <p class="item-desc">阅读2334次 | 收藏233次</p>
+              </div>
+            </a>
+            <a href="./article.html" class="ido-list-item">
+              <div class="item-img-wrap">
+                <img class="item-img" src="http://pic4.40017.cn/poi/2016/07/07/10/DtmExH_242x150_00.jpg.webp" alt="旅游哦" />
+              </div>
+              <div class="item-content-wrap">
+                <h1 class="item-title">
+                  住安顺百灵希尔顿逸林酒店1晚，游黄果树瀑布，看瀑布秀美风光
+                </h1>
+                <p class="item-desc">发布时间：2019-3-29</p>
+                <p class="item-desc">阅读2334次 | 收藏233次</p>
+              </div>
+            </a>
+            <a href="./article.html" class="ido-list-item">
+              <div class="item-img-wrap">
+                <img class="item-img" src="http://pic4.40017.cn/poi/2016/07/07/10/DtmExH_242x150_00.jpg.webp" alt="旅游哦" />
+              </div>
+              <div class="item-content-wrap">
+                <h1 class="item-title">
+                  住安顺百灵希尔顿逸林酒店1晚，游黄果树瀑布，看瀑布秀美风光
+                </h1>
+                <p class="item-desc">发布时间：2019-3-29</p>
+                <p class="item-desc">阅读2334次 | 收藏233次</p>
+              </div>
+            </a>
+         
+        </div>
+        <div class="ido-loading-inline">
+          <span class="ido-loading-info">
+            上拉加载更多
+            <i class="fa fa-long-arrow-up fa-vibrate-y ido-loading-icon"></i>
+          </span>
+        </div>
+        <div class="ido-loading-inline">
+          <span class="ido-loading-info">
+            我可是有底线的
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

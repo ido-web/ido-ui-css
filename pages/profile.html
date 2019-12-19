@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../dist/ido-ui.css" />
+    <link rel="stylesheet" href="./profile.css" />
+    <title>IDOUI-个人中心</title>
+  </head>
+  <body class="page-mine">
+    <div class="ido-navbar">
+      <a class="navbar-item" href="./index.html">
+        <i class="fa fa-home icon"></i>
+        <span class="name">首页</span>
+      </a>
+      <a class="navbar-item" href="./list.html">
+        <i class="fa fa-search icon"></i>
+        <span class="name">发现</span>
+      </a>
+      <a class="navbar-item active">
+        <i class="fa fa-user-o icon"></i>
+        <span class="name">我的</span>
+      </a>
+    </div>
+    <div class="ido-content">
+      <!-- 用户个人信息 -->
+      <div class="ido-panel-body user">
+        <img class="portrait" src="./head.jpg" alt="用户头像" />
+        <div class="info">
+          <h2 class="nick-name">IDO</h2>
+          <p class="detail">
+            <a href="#" class="detail-item">关注 32423</a>
+            <a href="#" class="detail-item">收藏 3232323万</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- 菜单区域 -->
+      <div class="ido-panel-body no-padding">
+        <div class="ido-menu">
+          <a href="#" class="ido-menu-item">
+            <p class="ido-menu-name">我的钱包</p>
+            <i class="fa fa-chevron-right ido-menu-icon"></i>
+          </a>
+          <a href="#" class="ido-menu-item">
+            <p class="ido-menu-name">我的文章</p>
+            <i class="fa fa-chevron-right ido-menu-icon"></i>
+          </a>
+          <a href="#" class="ido-menu-item">
+            <p class="ido-menu-name">访问统计</p>
+            <i class="fa fa-chevron-right ido-menu-icon"></i>
+          </a>
+          <a class="ido-menu-item">
+            <p class="ido-menu-name">我的推广码</p>
+            <i class="fa fa-qrcode ido-menu-value"></i>
+            <i class="fa fa-chevron-right ido-menu-icon"></i>
+          </a>
+          <a class="ido-menu-item">
+            <p class="ido-menu-name">接收新消息</p>
+            <input class="ido-switch" type="checkbox" checked />
+          </a>
+        </div>
+      </div>
+      <div class="ido-panel-body no-padding">
+        <div class="ido-menu">
+          <a href="#" class="ido-menu-item">
+            <p class="ido-menu-name">设置</p>
+            <i class="fa fa-chevron-right ido-menu-icon"></i>
+          </a>
+          <a href="#" class="ido-menu-item">
+            <p class="ido-menu-name">意见反馈</p>
+            <i class="fa fa-chevron-right ido-menu-icon"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ido-panel-body no-padding">
+        <span class="ido-btn ido-btn-large logout-btn">退出登录</span>
+      </div>
+
+      <!-- 显示我的推广二维码 -->
+      <div class="ido-modal">
+        <!-- 需要打开二维码时，在ido-modal上添加“show”这个类即可 -->
+        <!-- <div class="ido-modal show"> -->
+        <div class="ido-mask"></div>
+        <div class="ido-modal-wrap">
+          <div class="ido-modal-body no-padding">
+            <img class="ido-modal-img" src="../imgs/gg.jpg" alt="" />
+          </div>
+          <i class="fa fa-close ido-modal-close"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- 确认关闭新消息提醒 -->
+    <div class="ido-action-sheet">
+      <!-- 需要打开弹窗时，添加“show”这个类即可 -->
+      <!-- <div class="ido-action-sheet show"> -->
+      <div class="ido-mask"></div>
+      <div class="ido-action-sheet-wrap">
+        <div class="ido-action-sheet-header">
+          <h1 class="ido-action-sheet-title">
+            关闭该功能后，您将不再收到新消息的通知，确定要这样做吗？
+          </h1>
+        </div>
+        <div class="ido-action-sheet-body">
+          <a class="ido-action-sheet-menu">关闭新消息提醒</a>
+        </div>
+        <div class="ido-action-sheet-footer">
+          <a class="ido-action-sheet-menu">取消</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

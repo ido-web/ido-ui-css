@@ -226,6 +226,12 @@ body{
     font-size: 14px;
     font-weight: normal;
 }
+/* 标题导航 */
+.ido-content .ido-panel-title > .ido-panel-link{
+    float: right;
+    margin-right: 1rem;
+    color: #aaa;
+}
 /* Panel 内容区 */
 .ido-content .ido-panel-body{
     position: relative;
@@ -345,7 +351,7 @@ body{
 }
 /* 选中时的图标 */
 .ido-form-item > .ido-check.checked > .ido-check-icon{
-    background: #09BB07;
+    background: #e0652f;
     color: #fff;
     border-color: rgba(0,0,0,0)
 }
@@ -380,7 +386,7 @@ body{
 }
 /* 定制主操作按钮样式 */
 .ido-btn.ido-btn-primary{
-  background-color: #1AAD19;
+  background-color: #e0652f;
   color: #fff;
 }
 /* 定制警示类按钮样式 */
@@ -415,6 +421,7 @@ body{
   max-width: 640px;
   margin: 0 auto;
   background: #f8f8f8;
+  z-index: 110;
 }
 /* 搜索状态中，覆盖内容区 */
 .ido-search.on-focus{
@@ -1042,6 +1049,7 @@ div{
 }
 /* 文章图片 */
 .ido-article .ido-article-img{
+  display: block;
   max-width: 100%;
   margin: auto;
 }

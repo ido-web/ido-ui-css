@@ -1,11 +1,11 @@
-# ido-ui
-移动端ui框架
+## ido-ui
+一套纯CSS实现的移动端UI框架库
 
-# 集成
+## 集成
 ```bash
-  npm i ido-ui@0.0.6 -S
+  npm i ido-ui -S
 ```
-# 使用
+## 使用
 本插件依赖font-awesome@4.7.0，安装本插件的同时也会安装font-awesome。在使用本UI样式库的时候可以直接引用对应的CSS文件
 ```css
   import 'font-awesome/css/font-awesome.min.css';
@@ -15,9 +15,16 @@
 ```css
   import 'ido-ui';
 ```
-# 项目介绍
-* [组件](doc/components.md)
-* [常用页面的设计与开发](doc/pages.md)  
+## 项目介绍
+
+## 变更记录
+1.0.0
+- 【Initial】初始版本
+
+1.0.1
+- 【Add】Panel组件的标题部分添加“查看更多”这种引导链接的样式。
+- 【Bug Fix】Search 组件指定 z-index，解决和有定位元素同时使用时的层级错乱问题。
+- 【Bug Fix】修复Article组件中图片不居中的问题。
 
 
 
