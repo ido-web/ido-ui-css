@@ -3,15 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="../src/ido-ui.css">
+        <link rel="stylesheet" href="../src/ido-ui-css.css">
         <title>IDOUI-模态框海报样式</title>
     </head>
     <body>
-        <div class="ido-header">
-            <div class="left"><i class="fa fa-chevron-left"></i></div>
-            <div class="title">IDOUI-模态框</div>
-            <div class="right"><i class="fa fa-ellipsis-h"></i></div>
-        </div>
+            <div class="ido-header">
+                    <div class="left"><a style="color: black;" href="javascript:history.go(-1)"><i class="fa fa-chevron-left"></i></a></i></div>
+                    <div class="title">模态框</div>
+                    <div class="right"><i class="fa fa-ellipsis-h"></i></div>
+                </div>
         <div class="ido-navbar">
             <a class="navbar-item">
                 <i class="fa fa-home icon"></i>
@@ -43,5 +43,14 @@
                 <i class="fa fa-close ido-modal-close"></i>
             </div>
         </div>
+        <script>
+        window.onload = () => {
+            // 弹出菜单
+            // 收回菜单
+            document.querySelector(".ido-modal-close").onclick = e => {
+              document.querySelector(".ido-modal").classList.remove("show");
+            };
+          };
+        </script>
     </body>
 </html>

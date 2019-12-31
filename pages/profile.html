@@ -6,7 +6,7 @@
       name="viewport"
       content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no"
     />
-    <link rel="stylesheet" href="../dist/ido-ui.css" />
+    <link rel="stylesheet" href="../dist/ido-ui-css.min.css" />
     <link rel="stylesheet" href="./profile.css" />
     <title>IDOUI-个人中心</title>
   </head>
@@ -81,7 +81,7 @@
       </div>
 
       <!-- 显示我的推广二维码 -->
-      <div class="ido-modal">
+      <div class="ido-modal show">
         <!-- 需要打开二维码时，在ido-modal上添加“show”这个类即可 -->
         <!-- <div class="ido-modal show"> -->
         <div class="ido-mask"></div>
@@ -113,5 +113,15 @@
         </div>
       </div>
     </div>
+
+    <script>
+      window.onload = () => {
+        // 弹出菜单
+        // 收回菜单
+        document.querySelector(".ido-modal-close").onclick = e => {
+          document.querySelector(".ido-modal").classList.remove("show");
+        };
+      };
+    </script>
   </body>
 </html>

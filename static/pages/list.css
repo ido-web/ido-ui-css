@@ -1,0 +1,19 @@
+/* 排序按钮的容器 */
+.page-list .sort-wrap{
+  display: flex;
+}
+/* 排序按钮 */
+.page-list .sort-wrap > .sort-btn{
+  flex: 1;
+  border-radius: 0;
+  border: none;
+  border-top: 1px solid #ddd;
+  background: #fff;
+}
+/* 激活状态下的排序按钮 */
+.page-list .sort-wrap > .sort-btn.active{
+  color: #09bb07;
+}
+.page-list .sort-wrap > .sort-btn + .sort-btn{
+  border-left: 1px solid #ddd;
+}

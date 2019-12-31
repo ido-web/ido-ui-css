@@ -6,7 +6,7 @@
       name="viewport"
       content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no"
     />
-    <link rel="stylesheet" href="../dist/ido-ui.min.css" />
+    <link rel="stylesheet" href="../dist/ido-ui-css.min.css" />
     <link rel="stylesheet" href="./article.css" />
     <title>IDOUI-详情页</title>
   </head>
@@ -18,7 +18,7 @@
         <!-- 可以去掉fold类，文章就会展开，展开按钮会消失 -->
         <!-- <div class="ido-article"> -->
         <h1 class="ido-article-title">
-            住安顺百灵希尔顿逸林酒店1晚，游黄果树瀑布,
+            住安顺百灵希尔顿逸林酒店1晚
         </h1>
         <p class="ido-article-info">
           作者：IDO
@@ -125,5 +125,14 @@
           </div>
       </div>
     </div>
+
+    <script>
+        window.onload = ()=>{
+            // 展开文章
+            document.querySelector('#js-unfold').onclick = (e) => {
+                document.querySelector('.ido-article').classList.remove('fold');
+            }
+        };
+    </script>
   </body>
 </html>

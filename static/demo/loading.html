@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../src/ido-ui-css.css" />
+    <title>IDOUI-Loading加载提示组件</title>
+  </head>
+  <body>
+    <div class="ido-content">
+      <!-- 页面加载提示组件 -->
+      <!-- 页面加载提示组件 -->
+      <h1 class="ido-panel-title">页面加载提示组件</h1>
+      <div class="ido-panel-body">
+        <div class="ido-loading">
+          <i class="fa fa-circle-o-notch fa-spin ido-loading-icon"></i>
+          <span class="ido-loading-info">用力载入中...</span>
+        </div>
+        <div class="ido-loading">
+          <i class="fa fa-refresh ido-loading-icon"></i>
+          <span class="ido-loading-info">加载出错，点我重新加载</span>
+        </div>
+      </div>
+      <!-- 单行加载提示组件 -->
+      <h1 class="ido-panel-title">单行加载提示组件</h1>
+      <div class="ido-panel-body">
+        <div class="ido-loading-inline">
+          <span class="ido-loading-info">
+            <i class="fa fa-circle-o-notch fa-spin ido-loading-icon"></i>
+            用力加载中
+          </span>
+        </div>
+
+        <div class="ido-loading-inline">
+          <span class="ido-loading-info">
+            上拉加载更多
+            <!-- fa-vibrate-y是定义在icon.css的动画效果 -->
+            <i class="fa fa-long-arrow-up fa-vibrate-y ido-loading-icon"></i>
+          </span>
+        </div>
+
+        <div class="ido-loading-inline">
+          <span class="ido-loading-info">
+            我可是有底线的
+          </span>
+        </div>
+        <div class="ido-loading-inline">
+          <span class="ido-loading-info">
+            ·
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

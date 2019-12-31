@@ -1,0 +1,32 @@
+/* Toast提示工具 */
+.ido-toast{
+  position: fixed;
+  width: 7rem;
+  top: 45%;
+  transform: translateY(-40%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 1rem 0;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, .6);
+  border-radius: .4rem;
+  transition: transform .3s, opacity .3s;
+  z-index: 301;
+}
+/* 显示Toast组件 */
+.ido-toast.show{
+  opacity: 1;
+  transform: translateY(-50%);
+}
+/* Toast组件中的图标 */
+.ido-toast > .ido-toast-icon{
+  font-size: 2.2rem;
+}
+/* Toast组件中的文本部分 */
+.ido-toast > .ido-toast-info{
+  margin-top: .5rem;
+  font-size: .7rem;
+}

@@ -1,0 +1,52 @@
+/* 内容区 
+    设置position: relative;属性是为了方便子元素在相对它做绝对定位
+
+    通过兄弟选择器，来设置，当没有header或者nav的时候，content可以区填充对应的位置
+*/
+.ido-content{
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.ido-header~.ido-content {
+    padding-top: 2.5rem;
+}
+
+.ido-navbar~.ido-content {
+    padding-bottom: 2.5rem;
+}
+
+/* 内容分区 -- Panel 面板 */
+/* Panel 标题 */
+.ido-content .ido-panel-title{
+    height: 1.8rem;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+    color: #aaa;
+    background: #fff;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    font-weight: normal;
+}
+/* 标题导航 */
+.ido-content .ido-panel-title > .ido-panel-link{
+    float: right;
+    margin-right: 1rem;
+    color: #aaa;
+}
+/* Panel 内容区 */
+.ido-content .ido-panel-body{
+    position: relative;
+    margin-bottom: .6rem;
+    padding: .6rem 1rem;
+    background: #fff;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+/* 可手动设置内容区是否有内边距 */
+.ido-content .ido-panel-body.no-padding{
+    padding: 0;
+}

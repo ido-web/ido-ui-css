@@ -1,0 +1,16 @@
+/* 喜欢功能 */
+.page-article .ido-article-info > .like{
+  float: right;
+}
+/* 更改激活状态下喜欢按钮的颜色 */
+.page-article .ido-article-info > .like.active{
+  color: #09bb07;
+}
+/* 非喜欢状态，使用空心的图标 */
+.page-article .ido-article-info > .like:not(.active) > .like-icon{
+  display: none;
+}
+/* 激活状态下使用实心的图标 */
+.page-article .ido-article-info > .like.active > .dislike-icon{
+  display: none;
+}

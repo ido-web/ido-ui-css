@@ -1,0 +1,76 @@
+/* 弹出菜单容器，默认隐藏在屏幕的下面 */
+.ido-action-sheet > .ido-action-sheet-wrap{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 640px;
+  margin: auto;
+  background: #eee;
+  transition: transform .3s ease;
+  transform: translateY(100%);
+  z-index: 301;
+}
+/* 菜单弹出的时候，改变容器位移 */
+.ido-action-sheet.show .ido-action-sheet-wrap{
+  transform: translateY(0);
+}
+
+/* 默认隐藏蒙版 */
+.ido-action-sheet > .ido-mask{
+  opacity: 0;
+  /* 屏蔽元素的点击事件 */
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+/* 菜单弹出的时候显示蒙版 */
+.ido-action-sheet.show > .ido-mask{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 弹出菜单头部 */
+.ido-action-sheet .ido-action-sheet-header{
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 3rem;
+  background: #fff;
+}
+/* 头部标题，用来描述菜单作用 */
+.ido-action-sheet .ido-action-sheet-header > .ido-action-sheet-title{
+  flex: 1;
+  font-size: .7rem;
+  line-height: 1rem;
+  font-weight: normal;
+  color: rgba(0, 0, 0, .3);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 中间主要内容区 */
+.ido-action-sheet .ido-action-sheet-body{
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  background: #fff;
+}
+/* 菜单尾部，通常用来放取消按钮 */
+.ido-action-sheet .ido-action-sheet-footer{
+  margin-top: .3rem;
+  background: #fff;
+}
+/* 每个菜单项 */
+.ido-action-sheet .ido-action-sheet-menu{
+  display: block;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  font-size: .8rem;
+  text-align: center;
+}
+/* 菜单项的边框控制 */
+.ido-action-sheet .ido-action-sheet-menu + .ido-action-sheet-menu{
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}

@@ -1,0 +1,63 @@
+/* 文章组件 */
+.ido-article{
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+/* 文章被折叠的情况 */
+.ido-article.fold{
+  max-height: 100%;
+  overflow: hidden;
+}
+
+/* 展开按钮 */
+.ido-article .ido-article-unfold-btn{
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5rem;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #e0652f;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0, #fff 100%);
+}
+/* 控制展开按钮的显示 */
+.ido-article.fold .ido-article-unfold-btn{
+  display: block;
+}
+
+/* 文章大标题 */
+.ido-article .ido-article-title{
+  margin: .5rem 0 1rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+/* 文章信息，用来放作者、创作时间等 */
+.ido-article .ido-article-info{
+  font-size: .8rem;
+  color: #aaa;
+}
+/* 文章小标题 */
+.ido-article .ido-article-subtitle{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+/* 文章段落 */
+.ido-article .ido-article-paragraph{
+  margin: .5rem 0 1rem;
+}
+/* 文章图片 */
+.ido-article .ido-article-img{
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}

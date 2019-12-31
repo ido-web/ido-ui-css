@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../src/ido-ui-css.css" />
+    <title>IDOUI-Toast提示组件</title>
+  </head>
+  <body>
+    <div class="ido-content">
+      <h1 class="ido-panel-title">Toast提示组件</h1>
+      <div class="ido-panel-body">
+        <a class="ido-btn btn-primary" id="js-show-toast-loading">加载中提示</a>
+        <br />
+        <a class="ido-btn btn-primary" id="js-show-toast-success">成功提示</a>
+      </div>
+    </div>
+    <div class="ido-toast" id="js-toast-loading">
+      <i class="fa fa-spinner fa-spin ido-toast-icon"></i>
+      <p class="ido-toast-info">操作进行中</p>
+    </div>
+    <div class="ido-toast" id="js-toast-success">
+      <i class="fa fa-check ido-toast-icon"></i>
+      <p class="ido-toast-info">操作成功</p>
+    </div>
+
+    <script>
+        window.onload = ()=>{
+            // 显示加载中的Toast
+            document.querySelector('#js-show-toast-loading').onclick = (e) => {
+                let toastEle = document.querySelector('#js-toast-loading');
+                toastEle.classList.add('show');
+                setTimeout(()=> {
+                    toastEle.classList.remove('show');
+                }, 2e3);
+            };
+            // 显示操作成功的Toast
+            document.querySelector('#js-show-toast-success').onclick = (e) => {
+                let toastEle = document.querySelector('#js-toast-success');
+                toastEle.classList.add('show');
+                setTimeout(()=> {
+                    toastEle.classList.remove('show');
+                }, 2e3);
+            };
+        };
+    </script>
+  </body>
+</html>

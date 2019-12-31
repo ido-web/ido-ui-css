@@ -1,0 +1,33 @@
+.ido-navbar {
+  display: flex;
+  position: fixed;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+  max-width: 640px;
+  height: 2.5rem;
+  border-top: 1px solid #ddd;
+  z-index: 200;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+/* 导航项目 */
+.ido-navbar > .navbar-item{
+  flex: 1;
+  color: #808080;
+}
+/* 被选中的样式 */
+.ido-navbar > .navbar-item.active{
+  color: #F79709;
+}
+/* 导航图标 */
+.ido-navbar > .navbar-item > .icon{
+  padding: .3rem 0 .1rem;
+  font-size: 1.1rem;
+}
+/* 导航名称 */
+.ido-navbar > .navbar-item > .name{
+  display: block;
+  font-size: .5rem;
+}

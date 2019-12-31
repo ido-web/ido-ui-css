@@ -1,0 +1,44 @@
+/* 页面加载提示组件 */
+.ido-loading{
+  padding: 1rem 0;
+  text-align: center;
+}
+/* 页面加载提示组件的图标 */
+.ido-loading > .ido-loading-icon{
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, .05);
+}
+/* 页面加载提示组件的提示信息 */
+.ido-loading > .ido-loading-info{
+  display: block;
+  margin-top: .6rem;
+  font-size: .8rem;
+  color: #ccc;
+}
+
+/* 单行加载提示组件 */
+.ido-loading-inline{
+  margin: 1.5rem auto 1rem;
+  width: 12.5rem;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  color: #999;
+  height: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+/* 单行加载提示组件的文本信息 */
+.ido-loading-inline > .ido-loading-info{
+  display: inline-block;
+  padding: 0 .5rem;
+  position: relative;
+  top: -.7rem;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: .7rem;
+  background: #fff;
+}
+/* 单行加载提示组件的图标 */
+.ido-loading-inline > .ido-loading-info > .ido-loading-icon{
+  color: rgba(0, 0, 0, .2);
+}
